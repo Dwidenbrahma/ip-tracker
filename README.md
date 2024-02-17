@@ -26,8 +26,8 @@ This is a solution to the [IP address tracker challenge on Frontend Mentor](http
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Dwidenbrahma/ip-tracker)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://github.com/Dwidenbrahma/ip-tracker)
+- Live Site URL: (https://dwidenbrahma.github.io/ip-tracker)
 
 ### Built with
 
