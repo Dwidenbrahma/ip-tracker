@@ -1,0 +1,191 @@
+/* Importing Rubik font from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik"; /* Applying Rubik font as default */
+}
+
+/* Define color variables */
+:root {
+  --VeryDarkGray: hsl(0, 0%, 17%);
+  --DarkGray: hsl(0, 0%, 59%);
+}
+
+/* Styling for the header section */
+header {
+  background-image: url("../images/pattern-bg-mobile.png"); /* Set background image */
+  padding: 14px;
+  height: 300px;
+  z-index: 1;
+}
+
+/* Styling for the main heading */
+header h1 {
+  color: #fff;
+  margin: 20px 0 5px 0;
+  text-align: center;
+  font-weight: 500;
+  font-size: 27px;
+}
+
+/* Styling for the search form */
+form {
+  display: flex;
+  justify-content: center;
+}
+
+/* Styling for the input fields */
+input {
+  width: 80%;
+  padding: 16px;
+  border-radius: 10px 0 0 10px;
+  border: none;
+  outline: none;
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+/* Styling for input placeholders */
+input::placeholder {
+  font-size: 18px;
+}
+
+/* Styling for the search button */
+input:nth-child(2) {
+  width: 14%;
+  border-radius: 0 10px 10px 0;
+  padding: 16px;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Styling for the container section */
+.container-section {
+  background-color: #fff;
+  border-radius: 15px;
+  text-align: center;
+  border: 1px solid #b5b1b1;
+  padding: 20px;
+  position: sticky;
+  cursor: text;
+}
+
+/* Styling for section headings */
+h5 {
+  font-size: 18px;
+  padding: 0 0 10px 0;
+}
+
+/* Styling for paragraph elements */
+p {
+  font-size: 11px;
+  margin: 23px 0 7px 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--DarkGray);
+  letter-spacing: 2px;
+}
+
+/* Styling for the main section */
+main {
+  height: 400px;
+}
+
+/* Styling for the map container */
+#map {
+  height: 600px;
+  width: 100%;
+  z-index: -1; /* Push the map behind other elements */
+}
+
+/* Media queries for responsive design */
+@media screen and (min-width: 375px) and (max-width: 610px) {
+  /* Adjustments for devices with width between 375px and 610px */
+  header {
+    background-image: url("../images/pattern-bg-desktop.png");
+  }
+  input {
+    width: 70%;
+  }
+  input:nth-child(2) {
+    width: 9%;
+  }
+}
+
+@media screen and (min-width: 610px) and (max-width: 768px) {
+  /* Adjustments for devices with width between 610px and 768px */
+  header {
+    background-image: url("../images/pattern-bg-desktop.png");
+  }
+  input {
+    width: 60%;
+  }
+  input:nth-child(2) {
+    width: 7%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1034px) {
+  /* Adjustments for devices with width between 768px and 1034px */
+  header {
+    background-image: url("../images/pattern-bg-desktop.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  input {
+    width: 56%;
+  }
+  input:nth-child(2) {
+    width: 6%;
+  }
+  .container-section {
+    width: 89%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1034px) {
+  /* Adjustments for devices with width larger than 1034px */
+  header {
+    background-image: url("../images/pattern-bg-desktop.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  header h1 {
+    margin: 30px 0 10px 0;
+  }
+  form {
+    margin: 25px 0 17px 0;
+  }
+  input {
+    width: 40%;
+  }
+  input:nth-child(2) {
+    width: 4%;
+  }
+  .container-section {
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 0;
+  }
+  .child-section {
+    text-align: start;
+    margin: 0 12px;
+    padding: 0 17px 7px 0;
+    border-right: 1px solid var(--DarkGray);
+  }
+  .last {
+    border: none;
+  }
+}

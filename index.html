@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+    <title>IP Address Tracker</title>
+  </head>
+  <body>
+    <!-- header section -->
+    <header>
+      <h1>IP Address Tracker</h1>
+
+      <form action="/">
+        <input
+          type="text"
+          placeholder="Search for any IP address or domain"
+          name="ip" />
+        <input id="btn" type="button" value=">" />
+      </form>
+      <div class="container-section">
+        <div class="child-section">
+          <p>IP Address</p>
+          <h5>--.--.--.--</h5>
+        </div>
+        <div class="child-section">
+          <p>Location</p>
+          <h5>-- --</h5>
+        </div>
+        <div class="child-section">
+          <p>Timezone</p>
+          <h5>-- --</h5>
+        </div>
+        <div class="child-section last">
+          <p>ISP</p>
+          <h5>-- --</h5>
+        </div>
+      </div>
+    </header>
+    <!-- 
+    header section end -->
+
+    <!-- main section -->
+    <main>
+      <div id="map"></div>
+    </main>
+
+    <!-- main section end -->
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
