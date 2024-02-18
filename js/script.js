@@ -119,6 +119,8 @@ async function fetchData() {
   }
 }
 
+fetchData();
+
 //addting event in btn
 btn.addEventListener("click", () => {
   fetchData();
